@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.separator {
+    width: 170px;
+    height: 1px;
+}
+
+.separator--red {
+    background: #EC7979;
+}
+
+.separator--white{
+    background: #FFFFFF;
+}
+
+.button {
+    width: 270px;
+    height: 58px;
+    border: none;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+/* -------------------------------------------------------------HEADER
+----------------------------------------------------------------HEADER
+----------------------------------------------------------------HEADER */
+
+.header {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.menu {
+    max-width: 570px;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-link {
+    padding: 28px 35px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.menu-link:hover {
+    background: #EC7979;
+}
+
+.menu-link:active {
+    background: #AB4949;
+}
+
+
+
+/* -------------------------------------------------------------BANNER
+----------------------------------------------------------------BANNER
+----------------------------------------------------------------BANNER */
+
+
+.banner {
+    background-image: url(../img/banner.png);
+}
+
+.banner-bg{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding-top: 205px;
+}
+
+.banner--wrapper {
+    margin-bottom: 185px;
+    color: #FFFFFF;
+}
+
+.banner-logo{
+    width: 270px;
+    height: 100px;
+}
+
+.banner-title{
+    max-width: 670px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+
+
+.banner__separator{
+    margin: 55px 0 42px 0;
+}
+
+.banner__subtitle{
+    max-width: 270px;
+    margin-bottom: 42px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+}
+
+.banner-button{
+    width: 270px;
+    height: 58px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #FFFFFF;
+}
+
+.banner-form{
+    width: 470px;
+    height: 450px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-title{
+    padding: 35px 0;
+    margin-bottom: 45px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.form-title--red{
+    color:#EC7979;
+}
+
+.banner__input{
+    width: calc(100% - 100px);
+    margin-bottom: 35px;
+    border: none;
+    outline: none;
+}
+
+.banner-form button{
+    width: 100%;
+}
+
+/* -------------------------------------------------------------SOCIAL
+----------------------------------------------------------------SOCIAL
+----------------------------------------------------------------SOCIAL */
+
+.social {
+    margin-bottom: 100px;
+    background: #F8EFEF;
+}
+
+.social-container {
+    display: flex;
+    gap: 50px;
+    align-items: center
+}
+
+.social-title {
+    padding: 15px 0;
+    margin-bottom: 19px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #333333;
+}
+
+.social-subtitle {
+    margin-bottom: 19px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+}
+
+.social-list {
+    padding: 0;
+}
+
+/* -------------------------------------------------------------TABS
+----------------------------------------------------------------TABS
+----------------------------------------------------------------TABS */
+
+.button__tabs-header {
+    width: 184px;
+    height: 40px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #333333;
+    background-color: inherit;
+    border: none;
+}
+
+.button__tabs-header--active {
+    position: relative;
+    top: 1px;
+    background: #FFFFFF;
+    border-top: 1px solid #C6CBCD;
+    border-left: 1px solid #C6CBCD;
+    border-right: 1px solid #C6CBCD;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 6px 0 -1px #FFFFFF;
+}
+
+.tabs-body {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    margin-bottom: 100px;
+    border: 1px solid #C6CBCD;
+}
+
+.tabs-info{
+    margin-top: 50px;
+}
+
+.tabs-title {
+    margin-bottom: 85px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    align-items: center;
+}
+
+.tabs-text {
+    margin-bottom: 20px;
+    max-width: 570px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+}
+
+.button {
+    width: 270px;
+    height: 58px;
+    border: none;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.button--red {
+    background: #EC7979;
+}
+
+.button--red:hover{
+    background: #AB4949;
+}
+
+.tabs-img {
+    width: 470px;
+    height: 500px;
+    background: url(../img/tabs.png);
+}
+
+/* -------------------------------------------------------------ABOUT US
+----------------------------------------------------------------ABOUT US
+----------------------------------------------------------------ABOUT US */
+
+.about-us__title {
+    padding-bottom: 51px;
+    font-family: 'Raleway';
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.about-us__separator{
+    margin: 0 auto 40px;
+}
+
+.about-us__secondary-title {
+    margin-bottom: 71px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+}
+
+.about-us__list {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.list__list-item {
+    padding-top: 39px;
+}
+
+.list-item__image--wrapper {
+    height: 92px;
+    width: 92px;
+    margin: 0 auto 39px;
+    border: 1px solid #EC7979;
+    border-radius: 100px;
+}
+
+.list__list-item:nth-child(1) .list-item__image--wrapper {
+    padding: 8.35px;
+}
+
+.list__list-item:nth-child(2) .list-item__image--wrapper {
+    padding: 23px 12px;
+}
+
+.list__list-item:nth-child(3) .list-item__image--wrapper {
+    padding: 13px 22px 13px 26px;
+}
+
+.list-item__title {
+    padding: 32px 0;
+    margin-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.list-item__text {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------FOOTER
+----------------------------------------------------------------FOOTER
+----------------------------------------------------------------FOOTER */
+
+.footer {
+    padding-top: 35px;
+    color: #FFFFFF;
+    background: #000000;
+    text-align: center;
+}
+
+.social-list {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-social {
+    margin-bottom: 27px;
+}
+
+.social-item {
+    height: 53.2px;
+    width: 53.2px;
+}
+
+.footer-title {
+    padding-bottom: 27px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
