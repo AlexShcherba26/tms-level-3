@@ -11,6 +11,13 @@ ul,
 ol {
     margin: 0;
     padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color: #000;
 }
 
 p,
@@ -21,6 +28,9 @@ h4,
 h5,
 h6 {
     margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-style: normal;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -43,19 +53,6 @@ h6 {
     background: #FFFFFF;
 }
 
-.button {
-    width: 270px;
-    height: 58px;
-    border: none;
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    text-transform: capitalize;
-    color: #FFFFFF;
-}
-
 /* -------------------------------------------------------------HEADER
 ----------------------------------------------------------------HEADER
 ----------------------------------------------------------------HEADER */
@@ -74,10 +71,6 @@ h6 {
     padding: 20px;
 }
 
-.logo a {
-    text-decoration: none;
-}
-
 .menu {
     max-width: 570px;
 }
@@ -86,15 +79,11 @@ h6 {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0;
-    list-style: none;
 }
 
 .menu-link {
     padding: 28px 35px;
-
     color: #FFFFFF;
-    text-decoration: none;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -121,7 +110,7 @@ h6 {
 
 
 .banner {
-    background-image: url(../img/banner.png);
+    background-image: url(../img/banner/banner.png);
 }
 
 .banner-bg{
@@ -256,31 +245,47 @@ h6 {
 ----------------------------------------------------------------TABS
 ----------------------------------------------------------------TABS */
 
-.button__tabs-header {
+.tabs__tabs-header{
+    display: flex;
+    position: relative;
+    top: 1px;
+}
+
+.tabs-header__tab {
     width: 184px;
-    height: 40px;
+    padding: 10px 0;
+    background-color: inherit;
+    border: 1px solid transparent;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.tabs-header__tab:hover{
+    background: #FFFFFF;
+    border-top: 1px solid #C6CBCD;
+    border-left: 1px solid #C6CBCD;
+    border-right: 1px solid #C6CBCD;
+     border-radius: 5px 5px 0px 0px; 
+}
+
+.tabs__header-title{
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 14px;
-    line-height: 19px;
     text-transform: uppercase;
     color: #333333;
-    background-color: inherit;
-    border: none;
 }
 
-.button__tabs-header--active {
-    position: relative;
-    top: 1px;
+.tab--active {
     background: #FFFFFF;
     border-top: 1px solid #C6CBCD;
     border-left: 1px solid #C6CBCD;
     border-right: 1px solid #C6CBCD;
     border-radius: 5px 5px 0px 0px;
-    box-shadow: 0 6px 0 -1px #FFFFFF;
 }
 
-.tabs-body {
+.tabs__body {
     display: flex;
     justify-content: end;
     gap: 30px;
@@ -288,11 +293,11 @@ h6 {
     border: 1px solid #C6CBCD;
 }
 
-.tabs-info{
-    margin-top: 50px;
+.tabs__info{
+    padding-top: 50px;
 }
 
-.tabs-title {
+.tabs__title {
     margin-bottom: 85px;
     font-family: 'Open Sans';
     font-weight: 700;
@@ -301,29 +306,30 @@ h6 {
     align-items: center;
 }
 
-.tabs-text {
+.tabs__text {
     margin-bottom: 20px;
     max-width: 570px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 24px;
     align-items: center;
 }
 
-.button {
+ .button {
     width: 270px;
     height: 58px;
+    padding: 0;
+    margin-bottom: 54px;
     border: none;
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 18px;
-    line-height: 25px;
-    text-align: center;
     text-transform: capitalize;
     color: #FFFFFF;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
+
 
 .button--red {
     background: #EC7979;
@@ -333,17 +339,23 @@ h6 {
     background: #AB4949;
 }
 
-.tabs-img {
+.tabs__img--wrapper{
     width: 470px;
     height: 500px;
-    background: url(../img/tabs.png);
 }
 
-/* -------------------------------------------------------------ABOUT US
-----------------------------------------------------------------ABOUT US
-----------------------------------------------------------------ABOUT US */
+.tabs__img {
+    max-width: 470px;
+    max-height: 500px;
+}
 
-.about-us__title {
+/* -------------------------------------------------------------ABOUT
+----------------------------------------------------------------ABOUT
+----------------------------------------------------------------ABOUT */
+.about{
+    margin-bottom: 58px;
+}
+.about__title {
     padding-bottom: 51px;
     font-family: 'Raleway';
     font-size: 36px;
@@ -351,11 +363,11 @@ h6 {
     text-align: center;
 }
 
-.about-us__separator{
+.about__separator{
     margin: 0 auto 40px;
 }
 
-.about-us__secondary-title {
+.about__secondary-title {
     margin-bottom: 71px;
     font-size: 18px;
     line-height: 21px;
@@ -363,11 +375,9 @@ h6 {
     color: #86878B;
 }
 
-.about-us__list {
+.about__list {
     display: flex;
     gap: 30px;
-    padding: 0;
-    list-style: none;
 }
 
 .list__list-item {
@@ -433,7 +443,6 @@ h6 {
     display: flex;
     gap: 35px;
     justify-content: center;
-    list-style: none;
 }
 
 .footer-social {
