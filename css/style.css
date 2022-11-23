@@ -340,8 +340,7 @@ h6 {
 }
 
 .tabs__img {
-    max-width: 470px;
-    max-height: 500px;
+    display: block;
 }
 
 /* -------------------------------------------------------------ABOUT
