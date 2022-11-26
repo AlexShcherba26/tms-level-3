@@ -318,26 +318,27 @@ h6 {
     align-items: center;
 }
 
-.button {
+.tabs__download{
     width: 270px;
     padding: 17px 0;
     border: none;
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 18px;
+    text-align: center;
     text-transform: capitalize;
     color: #FFFFFF;
+    background: #EC7979;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
 
-
-.button--red {
-    background: #EC7979;
+.tabs__download:hover{
+    background-color: #AB4949;
 }
 
-.button--red:hover{
-    background: #AB4949;
+.tabs__download:active{
+    box-shadow: inset 0px 0px 10px #AB4949;
 }
 
 .tabs__img--wrapper{
@@ -422,7 +423,7 @@ h6 {
 ----------------------------------------------------------------PRICING */
 
 .pricing{
-    padding-top: 50px;
+    padding: 50px 0;
     background-color: #F5F5F5;
 }
 
@@ -434,7 +435,7 @@ h6 {
     color: #000000;
 }
 
-.separator--pricing{
+.pricing__separator{
     margin: 60px auto 40px;
 }
 
@@ -504,6 +505,66 @@ h6 {
     border: 2px solid #F5F5F5;
 }
 
+/* -------------------------------------------------------------BANNER2
+----------------------------------------------------------------BANNER2
+----------------------------------------------------------------BANNER2 */
+
+.banner2{
+    background: url(../asset/images/banner2/bg.png) no-repeat center/100%;
+}
+
+.banner2--bg{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner2--container{
+    padding: 50px 15px;
+}
+
+.banner2__title{
+    margin-top: 60px;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.banner2__separator{
+    margin: 60px auto 40px;
+}
+
+.banner2__text{
+    margin-bottom: 73px;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.banner2__download{
+    width: 370px;
+    margin: 0 auto;
+    padding: 15px 0;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    transition: all .3s ease-in-out;
+}
+
+.banner2__download:hover{
+    color: #EC7979;
+    border-color: #EC7979;
+
+}
+
+.banner2__download:active{
+    color: #FFFFFF;
+    background-color: #AB4949;
+    border-color: #AB4949;
+}
 
 
 /* -------------------------------------------------------------FOOTER
