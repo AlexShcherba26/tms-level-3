@@ -149,18 +149,6 @@ h6 {
     align-items: center;
 }
 
-/* .banner-button{
-    width: 270px;
-    height: 58px;
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: capitalize;
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid #FFFFFF;
-} */
-
 .banner__download{
     width: 270px;
     padding: 15px 0;
@@ -489,10 +477,6 @@ h6 {
     border: 1px solid #F5F5F5;
 }
 
-/* .price-item__list-item:not(:last-child){
-    border-bottom: 2px solid #F5F5F5;
-} */
-
 .price-item__title{
     padding: 12.5px 0;
     font-family: 'Open Sans', sans-serif;
@@ -522,6 +506,84 @@ h6 {
     background: #333333;
 }
 
+/* -------------------------------------------------------------REVIEWS
+----------------------------------------------------------------REVIEWS
+----------------------------------------------------------------REVIEWS */
+
+.reviews{
+    margin-bottom: 64px;
+    padding-top: 50px;
+}
+
+.reviews-title{
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.reviews__separator{
+    margin: 60px auto 40px;
+}
+
+.reviews-subtitle{
+    margin-bottom: 83px;
+    font-size: 18px;
+    text-align: center;
+    color: #86878B;
+}
+
+.reviews__customer-list{
+    display: flex;
+    gap: 30px;
+}
+
+.customer-item__customer-review--wrapper{
+    padding: 38px 23px;
+    margin-bottom: 66px;
+    background: #E2E2E2;
+    border-radius: 10px;   
+    text-align: center; 
+    position: relative;
+}
+
+.customer-item__customer-review--wrapper::after{
+    content: "";
+    display: block;
+    background: #E2E2E2;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 70px;
+    bottom: -8px;
+    border-right: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #E2E2E2;
+}
+
+.customer-item__customer-review{
+    font-size: 18px;
+    text-align: center;
+    color: #86878B;
+}
+
+.customer-item__customer-card{
+    display: flex;
+    gap: 30px;
+}
+
+.customer-card__customer-name{
+    margin: 8px 0 30px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.customer-card__customer-position{
+    font-size: 18px;
+    align-items: center;
+}
 
 
 /* -------------------------------------------------------------BANNER2
