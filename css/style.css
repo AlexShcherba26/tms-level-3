@@ -466,6 +466,7 @@ h6 {
     justify-content: space-between;
     gap: 30px;
     margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .price-list__price-item{
@@ -473,41 +474,9 @@ h6 {
     transition: all .3s ease-in-out;
 }
 
-.price-list__price-item--hover,
 .price-list__price-item:hover{
     transform: translateY(-20px);
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
-}
-
-.price-item__title{
-    padding: 12.5px 0;
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
-    text-transform: capitalize;
-    color: #FFFFFF;
-    background: #333333;
-    border-bottom: 2px solid #F5F5F5;
-}
-
-.price-item__cost{
-    padding: 28px 0;
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    color: #FFFFFF;
-    background: #333333;
-    border-bottom: 2px solid #F5F5F5;
-}
-
-.price-item__description{
-    padding: 13.5px 0;
-    font-size: 18px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.5);
-    background: #333333;
-    border-bottom: 2px solid #F5F5F5;
 }
 
 .price-item__list-item{
@@ -517,8 +486,43 @@ h6 {
     text-transform: capitalize;
     color: #86878B;
     background: #FFFFFF;
-    border: 2px solid #F5F5F5;
+    border: 1px solid #F5F5F5;
 }
+
+/* .price-item__list-item:not(:last-child){
+    border-bottom: 2px solid #F5F5F5;
+} */
+
+.price-item__title{
+    padding: 12.5px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: #333333;
+}
+
+.price-item__cost{
+    padding: 28px 0;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #333333;
+}
+
+.price-item__duration{
+    padding: 13.5px 0;
+    font-size: 18px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: none;
+    background: #333333;
+}
+
+
 
 /* -------------------------------------------------------------BANNER2
 ----------------------------------------------------------------BANNER2
