@@ -562,38 +562,49 @@ a{
 ----------------------------------------------------------------BANNER2
 ----------------------------------------------------------------BANNER2 */
 
-.banner2{
-    background: url(../asset/images/banner2/bg.png) no-repeat center/100%;
+.design{
+    position: relative;
+    background: url(../asset/images/desing/bg.png) no-repeat center/100%;
 }
 
-.banner2--bg{
+.design::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
     background: rgba(0, 0, 0, 0.5);
 }
 
-.banner2--container{
+.design--container{
+    position: relative;
+    z-index: 3;
     padding: 50px 15px;
 }
 
-.banner2__title{
-    margin-top: 60px;
+.design__title{
+    margin-top: 54px;
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
-.banner2__separator{
-    margin: 60px auto 40px;
+.design__separator{
+    margin: 53px auto 40px;
 }
 
-.banner2__text{
+.design__text{
     margin-bottom: 73px;
     font-size: 18px;
     text-align: center;
     color: #FFFFFF;
 }
 
-.banner2__download{
+.design__download{
     width: 370px;
     margin: 0 auto;
     padding: 15px 0;
@@ -607,12 +618,12 @@ a{
     transition: all .3s ease-in-out;
 }
 
-.banner2__download:hover{
+.design__download:hover{
     color: #EC7979;
     border-color: #EC7979;
 }
 
-.banner2__download:active{
+.design__download:active{
     background-color: #AB4949;
     border-color: #AB4949;
 }
@@ -640,16 +651,17 @@ a{
 }
 
 .social-item {
-    height: 53px;
-    width: 53px;
+    height: 54px;
+    width: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-title {
     font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    align-items: center;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
 }
