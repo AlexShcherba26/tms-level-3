@@ -230,10 +230,6 @@ a{
     color: #86878B;
 }
 
-.social-list {
-    padding: 0;
-}
-
 /* -------------------------------------------------------------TABS
 ----------------------------------------------------------------TABS
 ----------------------------------------------------------------TABS */
@@ -272,13 +268,6 @@ a{
     font-size: 14px;
     text-transform: uppercase;
     color: #333333;
-}
-
-.tab--active {
-    background: #FFFFFF;
-    border-top: 1px solid #C6CBCD;
-    border-left: 1px solid #C6CBCD;
-    border-right: 1px solid #C6CBCD;
 }
 
 .tabs__body {
@@ -634,7 +623,7 @@ a{
 ----------------------------------------------------------------FOOTER */
 
 .footer {
-    padding-top: 35px;
+    padding: 35px 0 27px;
     color: #FFFFFF;
     background: #000000;
     text-align: center;
@@ -651,12 +640,11 @@ a{
 }
 
 .social-item {
-    height: 53.2px;
-    width: 53.2px;
+    height: 53px;
+    width: 53px;
 }
 
 .footer-title {
-    padding-bottom: 27px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
