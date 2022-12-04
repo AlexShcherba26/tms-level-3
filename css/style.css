@@ -550,8 +550,6 @@ h6 {
 .customer-item__customer-review--wrapper::after{
     content: "";
     display: block;
-    /* background: #E2E2E2; */
-    /* transform: rotate(45deg); */
     position: absolute;
     left: 70px;
     bottom: -20px;
