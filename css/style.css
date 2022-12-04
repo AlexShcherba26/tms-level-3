@@ -1,37 +1,17 @@
 * {
     box-sizing: border-box;
-}
-
-body,
-html {
-    margin: 0;
-}
-
-ul,
-ol {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-a{
     text-decoration: none;
-    display: block;
-    color: #000;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    padding: 0;
     font-weight: normal;
     font-style: normal;
     font-family: 'Raleway', sans-serif;
+}
+
+a{
+    display: block;
+    color: #000;
 }
 
 .container {
@@ -58,6 +38,10 @@ h6 {
 ----------------------------------------------------------------HEADER */
 
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
     background: #000000;
     color: #FFFFFF;
 }
