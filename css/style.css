@@ -550,12 +550,12 @@ h6 {
 .customer-item__customer-review--wrapper::after{
     content: "";
     display: block;
-    background: #E2E2E2;
-    transform: rotate(45deg);
+    /* background: #E2E2E2; */
+    /* transform: rotate(45deg); */
     position: absolute;
     left: 70px;
-    bottom: -8px;
-    border-right: 15px solid transparent;
+    bottom: -20px;
+    border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 20px solid #E2E2E2;
 }
@@ -581,6 +581,7 @@ h6 {
 }
 
 .customer-card__customer-position{
+    font-family: 'Raleway';
     font-size: 18px;
     align-items: center;
 }
