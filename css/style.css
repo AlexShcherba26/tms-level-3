@@ -689,13 +689,14 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s ease-in-out;
 }
 
-.social-item svg{
+.social-item svg path{
     fill: #CCCCCC;
 }
 
-.social-item:hover svg{
+.social-item:hover svg path{
     fill: #EC7979;
 }
 
