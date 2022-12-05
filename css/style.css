@@ -580,13 +580,15 @@ a{
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 24px;
+    
+    color: #000000;
     align-items: center;
     text-transform: capitalize;
 }
 
 .customer-card__customer-position{
-    font-family: 'Raleway';
     font-size: 18px;
+    color: #000000;
     align-items: center;
 }
 
@@ -689,11 +691,11 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .3s ease-in-out;
 }
 
 .social-item svg path{
     fill: #CCCCCC;
+    transition: all .3s ease-in-out;
 }
 
 .social-item:hover svg path{
