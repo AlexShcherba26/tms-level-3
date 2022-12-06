@@ -216,9 +216,14 @@ a{
     outline: none;
     font-size: 14px;
     color: #000000;
+    transition: all .3s ease-in-out;
+}
+.banner-form__input:focus{
+    border-color: #EC7979;;
 }
 
 .banner-form__label:has(+ .banner-form__input:focus){
+    color: #EC7979;;
     bottom: 22px;
     transform: scale(0.9);
 }
