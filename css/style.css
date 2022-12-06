@@ -216,6 +216,9 @@ a{
     background-color: #EC7979;
     border: none;
     cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 15px;
 }
 
 /* -------------------------------------------------------------SOCIAL
