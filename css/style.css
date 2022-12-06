@@ -89,7 +89,7 @@ a{
 
 .banner {
     position: relative;
-    background: url(../asset/images/banner/banner.png) no-repeat center/100%;
+    background: url(../asset/images/banner/banner.png) no-repeat center/cover;
 }
 
 .banner::after{
@@ -123,10 +123,23 @@ a{
 
 .banner-title{
     max-width: 670px;
+    position: relative;
+    padding-bottom: 55px;
+    margin-bottom: 42px;
     font-weight: 500;
     font-size: 48px;
     line-height: 56px;
     text-transform: uppercase;
+}
+
+.banner-title::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 170px;
+    height: 1px;
+    background: #FFFFFF;
 }
 
 .banner__separator{
@@ -367,10 +380,23 @@ a{
 
 .about__title {
     padding-bottom: 51px;
+    margin-bottom: 40px;
+    position: relative;
     font-size: 36px;
     line-height: 48px;
     color: #000000;
     text-align: center;
+}
+
+.about__title::after{
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%;
+    width: 170px;
+    height: 1px;
+    background: #EC7979;
 }
 
 .about__separator{
@@ -437,11 +463,24 @@ a{
 }
 
 .pricing__title{
-    margin-top: 60px;
+    position: relative;
+    padding-bottom: 50px;
+    margin: 60px 0 40px;
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+}
+
+.pricing__title::after{
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%;
+    width: 170px;
+    height: 1px;
+    background: #EC7979;
 }
 
 .pricing__separator{
@@ -522,10 +561,24 @@ a{
 }
 
 .reviews-title{
+    position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+}
+
+.reviews-title::after{
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%;
+    width: 170px;
+    height: 1px;
+    background: #EC7979;
 }
 
 .reviews__separator{
@@ -599,7 +652,7 @@ a{
 
 .design{
     position: relative;
-    background: url(../asset/images/desing/bg.png) no-repeat center/100%;
+    background: url(../asset/images/desing/bg.png) no-repeat center/cover;
 }
 
 .design::after{
@@ -621,12 +674,27 @@ a{
 }
 
 .design__title{
+    position: relative;
+    padding-bottom: 53px;
+    margin-bottom: 40px;
     margin-top: 54px;
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+.design__title::after{
+    content: "";
+    width: 170px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFFFFF;
+}
+
 
 .design__separator{
     margin: 53px auto 40px;
