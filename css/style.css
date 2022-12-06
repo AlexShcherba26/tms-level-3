@@ -93,7 +93,7 @@ a{
 
 .banner-container{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     align-items:flex-start;
     padding: 208px 15px 212px;
     position: relative;
@@ -166,46 +166,62 @@ a{
 }
 
 .banner-form{
-    width: 470px;
-    height: 450px;
+    display: flex;
+    flex-direction: column;
+    max-width: 470px;
+    padding-top: 28px;
     background: #FFFFFF;
     border-radius: 10px;
     text-align: center;
 }
 
-.form-title{
-    padding: 28px 0;
-    margin-bottom: 45px;
+.banner-form__title{
+    margin: 0 53px 73px;
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 24px;
-    line-height: 33px;
     text-align: center;
     text-transform: uppercase;
     color: #333333;
 }
 
-.form-title--red{
+.banner-form__title--red{
     color:#EC7979;
 }
 
-.banner__input{
-    width: calc(100% - 100px);
-    margin-bottom: 35px;
-    border: none;
-    outline: none;
+.banner-form__label{
+    margin-left: 50px;  
+    align-self: flex-start;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #BDBDBD;
 }
 
-.banner-form button{
-    width: 100%;
+.banner-form__input{
+    margin: 0 50px 35px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    outline: none;
+    font-size: 14px;
+    color: #000000;
+}
+
+.banner-form__input:last-of-type{
+    margin-bottom: 76px;
+}
+
+.banner-form__button{
+    width: 470px;
     height: 60px;
     color: #FFFFFF;
     background-color: #EC7979;
     border: none;
+    border-radius: 0 0 10px 10px;
     cursor: pointer;
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 15px;
+    transition: all .3s ease-in-out;
 }
 
 /* -------------------------------------------------------------SOCIAL
