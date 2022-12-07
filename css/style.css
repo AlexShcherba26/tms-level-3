@@ -60,10 +60,12 @@ a{
 }
 
 .menu-link:hover {
+    font-weight: 700;
     background: #EC7979;
 }
 
 .menu-link:active {
+    font-weight: 700;
     background: #AB4949;
 }
 
