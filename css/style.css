@@ -172,6 +172,7 @@ a{
     padding-top: 28px;
     background: #FFFFFF;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .banner-form__title{
@@ -188,6 +189,10 @@ a{
     color:#EC7979;
 }
 
+.banner-form__form-item--wrapper{
+    padding: 0 50px;
+}
+
 .banner-form__form-item{
     margin-bottom: 35px;
     position: relative;
@@ -198,10 +203,7 @@ a{
 }
 
 .banner-form__label{
-    display: block;
-    position: absolute;
-    bottom: 16px;
-    margin-left: 50px;  
+    display: inline-block;
     font-family: 'Open Sans';
     font-size: 14px;
     color: #BDBDBD;
@@ -210,9 +212,7 @@ a{
 
 .banner-form__input{
     display: block;
-    width: calc(100% - 100px);
-    padding-top: 19px;
-    margin: 0 50px;
+    width: 100%;
     border: none;
     border-bottom: 1px solid #BDBDBD;
     outline: none;
@@ -220,24 +220,23 @@ a{
     color: #000000;
     transition: all .3s ease-in-out;
 }
+
 .banner-form__input:focus{
-    border-color: #EC7979;;
+    border-color: #EC7979;
 }
 
-.banner-form__label:has(+ .banner-form__input:focus){
-    color: #EC7979;;
-    bottom: 22px;
+.banner-form__label:has(+ .banner-form__input:focus),
+.banner-form__label:has(+ .banner-form__input:not(:focus):valid){
+    color: #EC7979;
+    transform: translateY(-8px);
     transform: scale(0.9);
 }
 
 .banner-form__button{
     width: 100%;
     padding: 20px 0;
-    display: block;
-    color: #FFFFFF;
     background-color: #EC7979;
     border: none;
-    border-radius: 0 0 10px 10px;
     cursor: pointer;
     font-family: 'Open Sans';
     font-weight: 600;
