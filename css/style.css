@@ -51,6 +51,7 @@ a{
 }
 
 .menu-link {
+    position: relative;
     padding: 28px 35px;
     color: #FFFFFF;
     font-family: 'Open Sans';
@@ -61,9 +62,34 @@ a{
     transition: all .3s ease-in-out;
 }
 
+.menu-link::after{
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: transparent;
+    font-weight: 900;
+    transition: .3s;
+    transform: scale(0.9);
+    transform-origin: center center;
+}
+
 .menu-link:hover {
-    font-weight: 700;
+    /* font-weight: 700;
+    background: #EC7979; */
+    color: transparent;
+}
+
+.menu-link:hover::after{
     background: #EC7979;
+    color: #FFFFFF;
+    transform: scale(1);
 }
 
 .menu-link:active {
