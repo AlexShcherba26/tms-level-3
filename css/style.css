@@ -849,14 +849,13 @@ a{
 }
 
 .contact-form__textarea--wrapper{
-    display: flex;
-    flex-direction: column;
     width: 50%;
 }
 
 .contact-form__textarea{
     display: block;
-    height: 100%;
+    width: 100%;
+    height: calc(100% - 18.75px);
     border: none;
     border-bottom: 1px solid #BDBDBD;
     outline: none;
