@@ -21,9 +21,11 @@ a{
     padding: 0 15px;
 }
 
+
 /* -------------------------------------------------------------HEADER
 ----------------------------------------------------------------HEADER
 ----------------------------------------------------------------HEADER */
+
 
 .header {
     position: sticky;
@@ -68,7 +70,6 @@ a{
     font-weight: 700;
     background: #AB4949;
 }
-
 
 
 /* -------------------------------------------------------------BANNER
@@ -253,6 +254,7 @@ a{
 ----------------------------------------------------------------SOCIAL
 ----------------------------------------------------------------SOCIAL */
 
+
 .social {
     margin-bottom: 100px;
     background: #F8EFEF;
@@ -302,9 +304,11 @@ a{
     align-items: center;
 }
 
+
 /* -------------------------------------------------------------TABS
 ----------------------------------------------------------------TABS
 ----------------------------------------------------------------TABS */
+
 
 .tabs{
     margin-bottom: 50px;
@@ -401,9 +405,11 @@ a{
     display: block;
 }
 
+
 /* -------------------------------------------------------------ABOUT
 ----------------------------------------------------------------ABOUT
 ----------------------------------------------------------------ABOUT */
+
 
 .about{
     margin-bottom: 58px;
@@ -484,9 +490,11 @@ a{
     text-align: center;
 }
 
+
 /* -------------------------------------------------------------PRICING
 ----------------------------------------------------------------PRICING
 ----------------------------------------------------------------PRICING */
+
 
 .pricing{
     padding: 50px 0;
@@ -582,9 +590,11 @@ a{
     background: #333333;
 }
 
+
 /* -------------------------------------------------------------REVIEWS
 ----------------------------------------------------------------REVIEWS
 ----------------------------------------------------------------REVIEWS */
+
 
 .reviews{
     margin-bottom: 64px;
@@ -681,6 +691,7 @@ a{
 ----------------------------------------------------------------BANNER2
 ----------------------------------------------------------------BANNER2 */
 
+
 .design{
     position: relative;
     background: url(../asset/images/desing/bg.png) no-repeat center/cover;
@@ -763,9 +774,142 @@ a{
 }
 
 
+/* -------------------------------------------------------------CONTACT
+----------------------------------------------------------------CONTACT
+----------------------------------------------------------------CONTACT */
+
+
+.contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact__title{
+    position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.contact__title::after{
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%;
+    width: 170px;
+    height: 1px;
+    background: #EC7979;
+}
+
+.contact__subtitle{
+    margin-bottom: 89px;
+    font-size: 18px;
+    text-align: center;
+    color: #86878B;
+}
+
+.contact-form--wrapper{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-form__input--wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-form__input-item:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.contact-form__label{
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #BDBDBD;
+    transition: all .3s ease-in-out;
+}
+
+.contact-form__input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    outline: none;
+    font-size: 14px;
+    color: #000000;
+    transition: all .3s ease-in-out;
+}
+
+.contact-form__textarea--wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-form__textarea{
+    display: block;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    outline: none;
+    font-size: 14px;
+    color: #000000;
+    transition: all .3s ease-in-out;
+    resize: none;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus{
+    border-color: #EC7979;
+}
+
+.contact-form__label:has(+ .contact-form__input:focus),
+.contact-form__label:has(+ .contact-form__input:not(:focus):valid),
+.contact-form__label:has(+ .contact-form__textarea:focus),
+.contact-form__label:has(+ .contact-form__textarea:not(:focus):valid){
+    color: #EC7979;
+    transform: translateY(-8px);
+    transform: scale(0.9);
+}
+
+.contact-form__button{
+    display: block;
+    margin: 0 auto;
+    min-width: 370px;
+    padding: 17px 0;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: #EC7979;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.contact-form__button:hover{
+    background-color: #AB4949;
+}
+
+.contact-form__button:active{
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
+
 /* -------------------------------------------------------------FOOTER
 ----------------------------------------------------------------FOOTER
 ----------------------------------------------------------------FOOTER */
+
 
 .footer {
     padding: 35px 0 27px;
