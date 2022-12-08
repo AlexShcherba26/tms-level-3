@@ -74,15 +74,13 @@ a{
     text-align: center;
     align-items: center;
     color: transparent;
-    font-weight: 900;
+    font-weight: 700;
     transition: .3s;
     transform: scale(0.9);
     transform-origin: center center;
 }
 
 .menu-link:hover {
-    /* font-weight: 700;
-    background: #EC7979; */
     color: transparent;
 }
 
