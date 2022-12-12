@@ -144,7 +144,6 @@ a{
     margin-bottom: 42px;
     font-weight: 500;
     font-size: 48px;
-    line-height: 56px;
     text-transform: uppercase;
 }
 
@@ -163,7 +162,6 @@ a{
     margin-bottom: 42px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
     align-items: center;
 }
 
@@ -293,7 +291,6 @@ a{
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 24px;
-    line-height: 30px;
     text-transform: capitalize;
     color: #333333;
 }
@@ -303,7 +300,6 @@ a{
     margin-right: -10px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
     color: #86878B;
 }
 
@@ -413,11 +409,6 @@ a{
     box-shadow: inset 0px 0px 10px #AB4949;
 }
 
-.tabs__img--wrapper{
-    width: 470px;
-    height: 500px;
-}
-
 .tabs__img {
     display: block;
 }
@@ -437,7 +428,6 @@ a{
     margin-bottom: 40px;
     position: relative;
     font-size: 36px;
-    line-height: 48px;
     color: #000000;
     text-align: center;
 }
@@ -456,7 +446,6 @@ a{
 .about__secondary-title {
     margin-bottom: 71px;
     font-size: 18px;
-    line-height: 21px;
     text-align: center;
     color: #86878B;
 }
@@ -490,7 +479,6 @@ a{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
-    line-height: 36px;
     color: #000000;
     text-align: center;
     text-transform: capitalize;
@@ -498,7 +486,6 @@ a{
 
 .list-item__text {
     font-size: 18px;
-    line-height: 26px;
     color: #000000;
     text-align: center;
 }
@@ -510,7 +497,8 @@ a{
 
 
 .pricing{
-    padding: 50px 0;
+    margin-bottom: 50px;
+    padding-top: 50px;
     background-color: #F5F5F5;
 }
 
@@ -882,7 +870,7 @@ a{
 .contact-form__button{
     display: block;
     margin: 0 auto;
-    min-width: 370px;
+    width: 370px;
     padding: 17px 0;
     font-family: 'Open Sans';
     font-weight: 600;
@@ -947,7 +935,6 @@ a{
 .footer-title {
     font-style: normal;
     font-size: 18px;
-    line-height: 21px;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -1038,41 +1025,343 @@ a{
     }
 
     .social__text--wrapper{
-        padding-top: 16px;
+        padding-top: 12px;
     }
 
     .social-title {
-        margin-bottom: 35px;
-        font-family: 'Open Sans';
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 30px;
-        text-transform: capitalize;
-        color: #333333;
+        margin-bottom: 23px;
+        font-size: 18px;
     }
 
     .social-subtitle {
         margin-bottom: 19px;
-        margin-right: -10px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: #86878B;
+        margin-right: 0;
+        font-size: 14px;
     }
 
     .social .social-list{
-        display: flex;
-        gap: 30px;
-        justify-content: center;
+        gap: 20px;
     }
 
     .social .social-item{
-        height: 70px;
-        width: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 64px;
+        width: 64px;
     }
+
+    
+    /* -------------------------------------------------------------TABS
+    ----------------------------------------------------------------TABS
+    ----------------------------------------------------------------TABS */
+
+
+    .tabs-header__tab {
+        width: 156px;
+    }
+
+    .tabs__header-title{
+        font-size: 14px;
+    }
+
+    .tabs__info{
+        padding: 28px 30px 30px 85px;
+    }
+
+    
+
+    .tabs__title {
+        margin-bottom: 66px;
+        font-size: 24px;
+    }
+
+    .tabs__text {
+        margin-bottom: 38px;
+        font-size: 14px;
+    }
+
+    .tabs__download{
+        width: 232px;
+        padding: 17px 0;
+    }
+
+    .tabs__img{
+        max-height: 385px;
+    }
+
+    
+    /* -------------------------------------------------------------ABOUT
+    ----------------------------------------------------------------ABOUT
+    ----------------------------------------------------------------ABOUT */
+
+
+    .about{
+        margin-bottom: 60px;
+    }
+
+    .about__title {
+        padding-top: 46px;
+        padding-bottom: 46px;
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+
+    .about__title::after{
+        content: "";
+        position: absolute;
+        transform: translateX(-50%);
+        bottom: 0;
+        left: 50%;
+        width: 142px;
+        height: 1px;
+        background: #EC7979;
+    }
+
+    .about__secondary-title {
+        margin-bottom: 32px;
+        font-size: 14px;
+    }
+
+    .about__list {
+        gap: 20px;
+    }
+
+    .list__list-item {
+        padding-top: 33px;
+    }
+
+    .list-item__image--wrapper {
+        height: 80px;
+        width: 80px;
+        margin-bottom: 33px;
+    }
+
+    .list-item__title {
+        padding: 29px 0;
+        margin-bottom: 37px;
+        font-size: 18px;
+    }
+
+    .list-item__text {
+        font-size: 14px;
+    }
+
+    
+    /* -------------------------------------------------------------PRICING
+    ----------------------------------------------------------------PRICING
+    ----------------------------------------------------------------PRICING */
+
+
+    .pricing{
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .pricing__title{
+        padding: 46px 0;
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+
+    .pricing__title::after{
+        width: 143;
+    }
+
+    .pricing__subtitle{
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+
+    .pricing__price-list{
+        gap: 20px;
+    }
+
+    .price-list__price-item{
+        width: 317px;
+    }
+
+    .price-item__list-item{
+        padding: 10px 0;
+    }
+
+    .price-item__title{
+        padding: 12.5px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        background: #333333;
+    }
+
+    .price-item__cost{
+        padding: 28px 0;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #333333;
+    }
+
+    .price-item__duration{
+        padding: 13.5px 0;
+    }
+
+    
+    /* -------------------------------------------------------------REVIEWS
+    ----------------------------------------------------------------REVIEWS
+    ----------------------------------------------------------------REVIEWS */
+
+
+    .reviews{
+        margin-bottom: 64px;
+        padding-top: 50px;
+    }
+
+    .reviews-title{
+        padding-bottom: 46px;
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+
+    .reviews-title::after{
+        width: 142px;
+    }
+
+    .reviews-subtitle{
+        margin-bottom: 32px;
+        font-size: 14px;
+    }
+
+    .reviews__customer-list{
+        gap: 20px;
+    }
+
+    .customer-item__customer-review--wrapper{
+        padding: 50px 33px;
+    }
+
+    .customer-item__customer-review{
+        font-size: 14px;
+    }
+
+    .customer-item__customer-card{
+        gap: 22px;
+    }
+
+    .customer-card__customer-name{
+        margin: 8px 0 15px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .customer-card__customer-position{
+        font-size: 14px;
+    }
+
+
+    /* -------------------------------------------------------------BANNER2
+    ----------------------------------------------------------------BANNER2
+    ----------------------------------------------------------------BANNER2 */
+
+
+    .design--container{
+        padding: 96px 15px 50px;
+    }
+
+    .design__title{
+        padding-bottom: 46px;
+        margin-bottom: 32px;
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    .design__title::after{
+        width: 142;
+    }
+
+    .design__text{
+        margin-bottom: 32px;
+        font-size: 14px;
+    }
+
+    .design__download{
+        width: 318px;
+    }
+
+        
+    /* -------------------------------------------------------------CONTACT
+    ----------------------------------------------------------------CONTACT
+    ----------------------------------------------------------------CONTACT */
+
+
+    .contact{
+        padding-top: 96px;
+        padding-bottom: 50px;
+    }
+
+    .contact__title{
+        padding-bottom: 46px;
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+
+    .contact__title::after{
+        width: 170px;
+    }
+
+    .contact__subtitle{
+        margin-bottom: 72px;
+        font-size: 14px;
+    }
+
+    .contact-form--wrapper{
+        gap: 20px;
+    }
+
+    .contact-form__input-item:not(:last-child){
+        margin-bottom: 50px;
+    }
+
+    .contact-form__textarea{
+        height: calc(100% - 18.75px);
+    }
+
+    .contact-form__button{
+        width: 318px;
+        padding: 17px 0;
+        font-size: 18px;
+    }
+
+
+    /* -------------------------------------------------------------FOOTER
+    ----------------------------------------------------------------FOOTER
+    ----------------------------------------------------------------FOOTER */
+
+
+    .footer {
+        padding: 35px 0 30px;
+    }
+
+    .footer .social-list {
+        gap: 27px;
+    }
+
+    .footer-social {
+        margin-bottom: 38px;
+    }
+
+    .footer .social-item {
+        height: 45px;
+        width: 45px;
+    }
+
+    .footer-title {
+        font-size: 14px;
+    }
+
+
+
+
 
 
 
