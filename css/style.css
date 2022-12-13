@@ -137,6 +137,11 @@ a{
     margin-bottom: 70px;
 }
 
+.banner-logo svg{
+    width: 170px;
+    height:55px;
+}
+
 .banner-title{
     max-width: 670px;
     position: relative;
@@ -504,8 +509,8 @@ a{
 
 .pricing__title{
     position: relative;
-    padding-bottom: 50px;
-    margin: 60px 0 40px;
+    padding-bottom: 51px;
+    margin-bottom: 40px;
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
@@ -534,8 +539,6 @@ a{
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    margin-bottom: 50px;
-    font-family: 'Raleway', sans-serif;
 }
 
 .price-list__price-item{
@@ -941,20 +944,18 @@ a{
 
 @media (max-width: 1024px) {
 
-    .container {
-        max-width: 992px;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
 
-
-      /* -------------------------------------------------------------HEADER
+    /* -------------------------------------------------------------HEADER
     ----------------------------------------------------------------HEADER
     ----------------------------------------------------------------HEADER */
 
 
     .header__logo{
-        margin-left: 85px;
+        margin-left: 100px;
+    }
+
+    .header__menu{
+        margin-right: -10px;
     }
 
 
@@ -965,17 +966,26 @@ a{
 
     .banner--wrapper {
         gap: 36px;
-        padding: 137px 5px 106px 85px;
+        padding: 137px 5px 106px 100px;
+    }
+
+    .banner--about-wrapper{
+        padding-top: 17px;
     }
 
     .banner-logo{
-        margin-bottom: 54px;
+        margin-bottom: 50px;
+    }
+
+    .banner-logo svg{
+        width: 120px;
+        height: 40px;
     }
 
     .banner-title{
         max-width: 600px;
-        padding-bottom: 40px;
-        margin-bottom: 30px;
+        padding-bottom: 42px;
+        margin-bottom: 32px;
         font-size: 36px;
     }
 
@@ -984,6 +994,7 @@ a{
     }
 
     .banner__subtitle{
+        max-width: 260px;
         margin-bottom: 31px;
         font-size: 14px;
     }
@@ -995,16 +1006,22 @@ a{
 
     .banner-form{
         max-width: 398px;
+        width: 100%;
+        margin-right: -17px;
         padding-top: 33px;
     }
 
     .banner-form__title{
-        margin: 0 140px 77px;
+        margin: 0 0 77px;
         font-size: 18px;
     }
 
+    .banner-form__form-item--wrapper {
+        margin: 0px 50px 78px;
+    }
+
     .banner-form__form-item:not(:last-child){
-        margin-bottom: 33px;
+        margin-bottom: 35px;
     }
 
     .banner-form__button{
@@ -1017,11 +1034,12 @@ a{
 
 
     .social {
-        margin-bottom: 63px;
+        margin-bottom: 60px;
     }
 
     .social-container {
         gap: 20px;
+        align-items: end;
     }
 
     .social__text--wrapper{
@@ -1029,12 +1047,12 @@ a{
     }
 
     .social-title {
-        margin-bottom: 23px;
+        margin-bottom: 24px;
         font-size: 18px;
     }
 
     .social-subtitle {
-        margin-bottom: 19px;
+        margin-bottom: 0;
         margin-right: 0;
         font-size: 14px;
     }
@@ -1058,6 +1076,10 @@ a{
         width: 156px;
     }
 
+    .tabs-header__tab:hover{
+        width: 172px;
+    }
+
     .tabs__header-title{
         font-size: 14px;
     }
@@ -1066,15 +1088,13 @@ a{
         padding: 28px 30px 30px 85px;
     }
 
-    
-
     .tabs__title {
         margin-bottom: 66px;
         font-size: 24px;
     }
 
     .tabs__text {
-        margin-bottom: 38px;
+        margin-bottom: 23px;
         font-size: 14px;
     }
 
@@ -1136,7 +1156,7 @@ a{
 
     .list-item__title {
         padding: 29px 0;
-        margin-bottom: 37px;
+        margin-bottom: 17px;
         font-size: 18px;
     }
 
@@ -1156,8 +1176,9 @@ a{
     }
 
     .pricing__title{
-        padding: 46px 0;
-        margin-bottom: 32px;
+        padding-top: 53px;
+        padding-bottom: 46px;
+        margin-bottom: 33px;
         font-size: 24px;
     }
 
@@ -1179,31 +1200,19 @@ a{
     }
 
     .price-item__list-item{
-        padding: 10px 0;
+        padding: 10.5px 0;
     }
 
     .price-item__title{
-        padding: 12.5px 0;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-        text-align: center;
-        text-transform: capitalize;
-        color: #FFFFFF;
-        background: #333333;
+        padding: 9px 0;
     }
 
     .price-item__cost{
-        padding: 28px 0;
-        font-weight: 700;
-        font-size: 36px;
-        text-align: center;
-        color: #FFFFFF;
-        background: #333333;
+        padding: 22px 0;
     }
 
     .price-item__duration{
-        padding: 13.5px 0;
+        padding: 12px 0;
     }
 
     
@@ -1213,8 +1222,8 @@ a{
 
 
     .reviews{
-        margin-bottom: 64px;
-        padding-top: 50px;
+        margin-bottom: 45px;
+        padding-top: 95px;
     }
 
     .reviews-title{
@@ -1237,7 +1246,7 @@ a{
     }
 
     .customer-item__customer-review--wrapper{
-        padding: 50px 33px;
+        padding: 50px 30px;
     }
 
     .customer-item__customer-review{
@@ -1316,6 +1325,7 @@ a{
 
     .contact-form--wrapper{
         gap: 20px;
+        margin-bottom: 53px;
     }
 
     .contact-form__input-item:not(:last-child){
