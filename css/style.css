@@ -42,6 +42,11 @@ a{
     max-height: 75px;
 }
 
+.header__logo--svg{
+    width: 87px;
+    height: 31px;
+}
+
 .header__menu-list {
     width: 100%;
     max-width: 570px;
@@ -137,7 +142,7 @@ a{
     margin-bottom: 70px;
 }
 
-.banner-logo svg{
+.banner-logo--svg{
     width: 170px;
     height:55px;
 }
@@ -1367,4 +1372,161 @@ a{
 
 @media (max-width: 320px) {
     /* … */
+
+
+
+    
+    /* -------------------------------------------------------------CONTACT
+    ----------------------------------------------------------------CONTACT
+    ----------------------------------------------------------------CONTACT */
+
+
+    .contact{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .contact__title{
+        position: relative;
+        padding-bottom: 60px;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .contact__title::after{
+        content: "";
+        position: absolute;
+        transform: translateX(-50%);
+        bottom: 0;
+        left: 50%;
+        width: 170px;
+        height: 1px;
+        background: #EC7979;
+    }
+
+    .contact__subtitle{
+        margin-bottom: 89px;
+        font-size: 18px;
+        text-align: center;
+        color: #86878B;
+    }
+
+    .contact-form--wrapper{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .contact-form__input--wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .contact-form__input-item:not(:last-child){
+        margin-bottom: 50px;
+    }
+
+    .contact-form__label{
+        display: inline-block;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        color: #BDBDBD;
+        transition: all .3s ease-in-out;
+    }
+
+    .contact-form__input{
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #BDBDBD;
+        outline: none;
+        font-size: 14px;
+        color: #000000;
+        transition: all .3s ease-in-out;
+    }
+
+    .contact-form__textarea--wrapper{
+        width: 50%;
+    }
+
+    .contact-form__textarea{
+        display: block;
+        width: 100%;
+        height: calc(100% - 18.75px);
+        border: none;
+        border-bottom: 1px solid #BDBDBD;
+        outline: none;
+        font-size: 14px;
+        color: #000000;
+        transition: all .3s ease-in-out;
+        resize: none;
+    }
+
+    .contact-form__input:focus,
+    .contact-form__textarea:focus{
+        border-color: #EC7979;
+    }
+
+    .contact-form__label:has(+ .contact-form__input:focus),
+    .contact-form__label:has(+ .contact-form__input:not(:focus):valid),
+    .contact-form__label:has(+ .contact-form__textarea:focus),
+    .contact-form__label:has(+ .contact-form__textarea:not(:focus):valid){
+        color: #EC7979;
+        transform: translateY(-8px);
+        transform: scale(0.9);
+    }
+
+    .contact-form__button{
+        display: block;
+        margin: 0 auto;
+        width: 370px;
+        padding: 17px 0;
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        background-color: #EC7979;
+        border: none;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+
+    .contact-form__button:hover{
+        background-color: #AB4949;
+    }
+
+    .contact-form__button:active{
+        box-shadow: inset 0px 0px 10px #AB4949;
+    }
+    
+    /* -------------------------------------------------------------FOOTER
+    ----------------------------------------------------------------FOOTER
+    ----------------------------------------------------------------FOOTER */
+
+
+    .footer {
+        padding: 35px 0 29px;
+    }
+
+    .footer .social-list {
+        gap: 17px;
+    }
+
+    .footer-social {
+        margin-bottom: 42px;
+    }
+
+    .footer .social-item {
+        height: 27px;
+        width: 27px;
+    }
+
+
 } 
