@@ -326,6 +326,11 @@ a{
     align-items: center;
 }
 
+.social .social-item--svg{
+    height: 70px;
+    width: 70px;
+}
+
 
 /* -------------------------------------------------------------TABS
 ----------------------------------------------------------------TABS
@@ -480,6 +485,12 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.list-item__image--svg{
+    width: 92px;
+    height: 92px;
 }
 
 .list-item__title {
@@ -918,16 +929,13 @@ a{
     justify-content: center;
 }
 
-.footer-social {
+.footer .social-list {
     margin-bottom: 27px;
 }
 
-.footer .social-item {
-    height: 54px;
-    width: 51px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer .social-item--svg {
+    height: 53px;
+    width: 53px;
 }
 
 .social-item svg path{
@@ -1064,6 +1072,11 @@ a{
         width: 64px;
     }
 
+    .social .social-item--svg{
+        height: 64px;
+        width: 64px;
+    }
+
     
     /* -------------------------------------------------------------TABS
     ----------------------------------------------------------------TABS
@@ -1150,6 +1163,11 @@ a{
         height: 80px;
         width: 80px;
         margin-bottom: 33px;
+    }
+
+    .list-item__image--svg{
+        width: 80px;
+        height: 80px;
     }
 
     .list-item__title {
@@ -1359,6 +1377,11 @@ a{
     }
 
     .footer .social-item {
+        height: 45px;
+        width: 45px;
+    }
+
+    .footer .social-item--svg{
         height: 45px;
         width: 45px;
     }
