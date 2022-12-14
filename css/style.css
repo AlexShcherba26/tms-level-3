@@ -302,7 +302,6 @@ a{
 
 .social-subtitle {
     margin-bottom: 19px;
-    margin-right: -10px;
     font-weight: 400;
     font-size: 18px;
     color: #86878B;
@@ -954,10 +953,6 @@ a{
         margin-left: 100px;
     }
 
-    .header__menu{
-        margin-right: -10px;
-    }
-
 
     /* -------------------------------------------------------------BANNER
     ----------------------------------------------------------------BANNER
@@ -1007,7 +1002,6 @@ a{
     .banner-form{
         max-width: 398px;
         width: 100%;
-        margin-right: -17px;
         padding-top: 33px;
     }
 
@@ -1039,7 +1033,6 @@ a{
 
     .social-container {
         gap: 20px;
-        align-items: end;
     }
 
     .social__text--wrapper{
@@ -1370,18 +1363,6 @@ a{
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-  
 }
 
 @media (max-width: 320px) {
