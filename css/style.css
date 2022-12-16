@@ -8,6 +8,7 @@
     font-style: normal;
     font-family: 'Raleway', sans-serif;
     color: #FFFFFF;
+    scroll-behavior:smooth
 }
 
 a{
@@ -1100,7 +1101,6 @@ a{
     }
 
     .tabs__title {
-        margin-bottom: 66px;
         font-size: 24px;
     }
 
@@ -1126,6 +1126,7 @@ a{
 
     .about{
         margin-bottom: 60px;
+        padding-top: 60px;
     }
 
     .about__title {
@@ -1441,11 +1442,6 @@ a{
         margin-bottom: 40px;
     }
 
-    .tabs__text{
-        overflow: hidden;
-        height: 145px;
-    }
-
     .about {
         margin-bottom: 50px;
     }
@@ -1526,10 +1522,12 @@ a{
 
     .header--wrapper {
         padding: 15px 20px 15px 5px;
+        position: relative;
     }
 
     .header__logo {
         margin-left: 0px;
+        align-self: flex-start;
     }
 
     .header__logo--svg{
@@ -1537,13 +1535,27 @@ a{
         height: 23px;
     }
 
-    .header__menu{
-        position: relative;
-    }
-
     .header__menu-list {
         display: none;
+        position: absolute;
+        top: -800%;
+        left: -15px;
+        width: calc(100vw - 17px);
+        background-color: black;
+        transition: all 2s ease-in-out;
+        transform: scale(0);
+    }
 
+    .burger--check:checked ~ .header__menu-list {
+        display: block;
+        top: 57px;
+        transform: scale(1);
+        transition: all 2s ease-in-out;
+    }
+
+    .menu-item{
+        width: inherit;
+        transition: all 2s ease-in-out;
     }
 
     .burger--check{
@@ -1553,6 +1565,10 @@ a{
         height: 18px;
         position: absolute;
         cursor: pointer;
+    }
+
+    .burger--check:hover .burger__item{
+        background-color: #EC7979;
     }
 
     .burger--check:checked + .burger .burger__item:nth-child(1){
@@ -1572,9 +1588,14 @@ a{
 
     .burger{
         display: block; 
-        height: 18px;
+        margin-left: auto;
+        /* height: 18px; */
         width: 24px;
         transition: all .3s ease-in-out;
+    }
+
+    .burger:hover .burger__item{
+        background-color: #EC7979;
     }
 
     .burger__item{
