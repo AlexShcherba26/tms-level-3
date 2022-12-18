@@ -1398,6 +1398,10 @@ a{
     .header__logo {
         margin-left: 60px;
     }
+
+    .reviews__customer-list{
+        gap: 1px;
+    }
 }
 
 
@@ -1486,6 +1490,35 @@ a{
 
     .reviews-subtitle {
         margin-bottom: 22px;
+    }
+
+    .reviews__customer-list{
+        gap: 0px;
+    }
+
+    .swiper {
+        max-width: 739px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,9px));
+        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,9px));
+        background: var(--swiper-pagination-bullet-inactive-color,#fff);
+        opacity: 1;
+        border: 1px solid #86878B;
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: var(--swiper-pagination-bullet-opacity, 1);
+        background: #86878B;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,25px);
     }
 
     .design--container {
@@ -1896,7 +1929,8 @@ a{
 
 
     .reviews{
-        margin-bottom: 31px;
+        margin-bottom: 0;
+        padding-bottom: 32px;
         padding-top: 48px;
     }
 
@@ -1915,11 +1949,6 @@ a{
         font-size: 14px;
     }
 
-    .customer-list__customer-item:nth-child(2),
-    .customer-list__customer-item:nth-child(3){
-        display: none;
-    }
-
     .customer-item__customer-review--wrapper{
         padding: 50px 10px;
         margin-bottom: 62px;
@@ -1932,6 +1961,7 @@ a{
     .customer-item__customer-card{
         display: flex;
         gap: 30px;
+        margin-bottom: 32px;
     }
 
     .customer-card__customer-name{
@@ -1941,7 +1971,10 @@ a{
 
     .customer-card__customer-position{
         font-size: 13px;
+        margin-bottom: 32px;
     }
+
+    
 
 
     /* -------------------------------------------------------------BANNER2
